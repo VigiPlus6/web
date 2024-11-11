@@ -1,0 +1,121 @@
+/* Estilo para el carrito */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+}
+
+header {
+    background-color: #007b9e;
+    color: #fff;
+    padding: 10px 20px;
+}
+
+.header-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    height: 60px;
+    width: auto;
+}
+
+header h1 {
+    margin: 0 20px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.hero {
+    text-align: center;
+    padding: 100px 20px;
+    background-image: url('../fotos_y_otros/camara_seguridad_banner.jpg'); /* Ruta de la imagen de fondo */
+    background-size: cover;
+    background-position: center;
+    color: #fff; /* Texto en blanco para que contraste con el fondo */
+    position: relative;
+}
+
+.hero::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Capa de color oscuro para mejorar el contraste */
+    z-index: 1;
+}
+
+.hero h2,
+.hero p,
+.hero .cta {
+    position: relative;
+    z-index: 2; /* Asegura que el texto esté sobre la capa de color */
+}
+
+#carrito {
+    padding: 20px;
+    text-align: center;
+}
+
+#productos-carrito {
+    margin-bottom: 20px;
+}
+
+.producto-carrito {
+    padding: 10px;
+    border: 1px solid #ddd;
+    margin-bottom: 10px;
+    background-color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#total-container {
+    font-size: 1.2em;
+    margin-top: 20px;
+}
+
+button {
+    padding: 10px 15px;
+    background-color: #007b9e;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: #005f73;
+}
+
+footer {
+    background-color: #007b9e;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed; /* Fija el footer en la parte inferior */
+    bottom: 0; /* Asegura que esté en la parte inferior de la pantalla */
+    left: 0;
+    width: 100%; /* Hace que el footer ocupe todo el ancho */
+}
