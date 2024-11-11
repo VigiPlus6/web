@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Productos - VigiPlus</title>
+    <link rel="stylesheet" href="../styles/productos.css">
+</head>
+<body>
+
+<header>
+    <div class="header-content">
+        <img src="../fotos_y_otros/logo.png" alt="Logo de VigiPlus" class="logo">
+        <h1>VigiPlus</h1>
+        <nav>
+            <ul>
+                <li><a href="../index.html">Inicio</a></li>
+                <li><a href="productos.html">Productos</a></li>
+                <li><a href="quienes-somos.html">Quiénes Somos</a></li>
+                <li><a href="mision-vision.html">Misión y Visión</a></li>
+                <!-- <li><a href="privacidad.html">Aviso de Privacidad</a></li> -->
+                <li><a href="arco.html">Formulario ARCO</a></li>
+                <li><a href="carrito.html">Carrito de Compras</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+<section id="oferta">
+    <p class="oferta-principal">¡Compra 10 productos y recibe una cámara para vehículo gratis!</p>
+</section>
+
+<section id="catalogo">
+    <!-- Producto 1: Cámara Domo Interior -->
+    <div class="producto" id="producto_1">
+        <img src="../fotos_y_otros/camara_domo_interior.jpg" alt="Cámara Domo Interior" class="producto-imagen">
+        <h3>Cámara Domo Interior</h3>
+        <p><strong>Modelo:</strong> VigiPlus-VDINT-101</p>
+        <p><strong>Descripción:</strong>
+            <ul>
+                <li><strong>Uso:</strong> Ideal para vigilancia en espacios interiores como oficinas, tiendas o áreas comunes en edificios.</li>
+                <li><strong>Características:</strong> Su diseño de domo permite una cobertura amplia y discreta, dificultando que sea manipulada.</li>
+            </ul>
+        </p>
+        <p><strong>Precio Unitario:</strong> <span id="precio_1">$50.00</span></p>
+        <label for="cantidad_1">Cantidad:</label>
+        <input type="number" id="cantidad_1" class="cantidad" data-product-id="1" value="0" min="0">
+        <p><strong>Precio Total:</strong> <span id="precio-total_1">$0.00</span></p>
+        <button onclick="addToCart(1)">Añadir al Carrito</button>
+    </div>
+
+    <!-- Producto 2: Cámara Bala Exterior -->
+    <div class="producto" id="producto_2">
+        <img src="../fotos_y_otros/camara_bala_exterior.jpg" alt="Cámara Bala Exterior" class="producto-imagen">
+        <h3>Cámara Bala Exterior</h3>
+        <p><strong>Modelo:</strong> VigiPlus-VEEXT-202</p>
+        <p><strong>Descripción:</strong>
+            <ul>
+                <li><strong>Uso:</strong> Diseñada para exteriores, ideal para monitorear entradas y estacionamientos.</li>
+                <li><strong>Características:</strong> Resistente a la intemperie y con un alcance largo.</li>
+            </ul>
+        </p>
+        <p><strong>Precio Unitario:</strong> <span id="precio_2">$75.00</span></p>
+        <label for="cantidad_2">Cantidad:</label>
+        <input type="number" id="cantidad_2" class="cantidad" data-product-id="2" value="0" min="0">
+        <p><strong>Precio Total:</strong> <span id="precio-total_2">$0.00</span></p>
+        <button onclick="addToCart(2)">Añadir al Carrito</button>
+    </div>
+
+    <!-- Producto 3: Cámara PTZ con Zoom Óptico -->
+    <div class="producto" id="producto_3">
+        <img src="../fotos_y_otros/Cámara_PTZ_Zoom.jpg" alt="Cámara PTZ con Zoom Óptico" class="producto-imagen">
+        <h3>Cámara PTZ con Zoom Óptico</h3>
+        <p><strong>Modelo:</strong> VigiPlus-VPZOOM-303</p>
+        <p><strong>Descripción:</strong>
+            <ul>
+                <li><strong>Uso:</strong> Ideal para monitoreo de áreas amplias como estacionamientos.</li>
+                <li><strong>Características:</strong> Movimiento PTZ para un control preciso y remoto.</li>
+            </ul>
+        </p>
+        <p><strong>Precio Unitario:</strong> <span id="precio_3">$150.00</span></p>
+        <label for="cantidad_3">Cantidad:</label>
+        <input type="number" id="cantidad_3" class="cantidad" data-product-id="3" value="0" min="0">
+        <p><strong>Precio Total:</strong> <span id="precio-total_3">$0.00</span></p>
+        <button onclick="addToCart(3)">Añadir al Carrito</button>
+    </div>
+
+    <!-- Producto 4: Cámara Visión Nocturna HD -->
+    <div class="producto" id="producto_4">
+        <img src="../fotos_y_otros/camara_vision_nocturna.jpg" alt="Cámara Visión Nocturna HD" class="producto-imagen">
+        <h3>Cámara Visión Nocturna HD</h3>
+        <p><strong>Modelo:</strong> VigiPlus-VNHD-404</p>
+        <p><strong>Descripción:</strong>
+            <ul>
+                <li><strong>Uso:</strong> Ideal para vigilancia nocturna y baja iluminación.</li>
+                <li><strong>Características:</strong> Visión infrarroja para grabaciones en la oscuridad.</li>
+            </ul>
+        </p>
+        <p><strong>Precio Unitario:</strong> <span id="precio_4">$90.00</span></p>
+        <label for="cantidad_4">Cantidad:</label>
+        <input type="number" id="cantidad_4" class="cantidad" data-product-id="4" value="0" min="0">
+        <p><strong>Precio Total:</strong> <span id="precio-total_4">$0.00</span></p>
+        <button onclick="addToCart(4)">Añadir al Carrito</button>
+    </div>
+
+    <!-- Producto 5: Cámara IP Wi-Fi -->
+    <div class="producto" id="producto_5">
+        <img src="../fotos_y_otros/camara_wifi.jpg" alt="Cámara IP Wi-Fi" class="producto-imagen">
+        <h3>Cámara IP Wi-Fi</h3>
+        <p><strong>Modelo:</strong> VigiPlus-VIPWIFI-505</p>
+        <p><strong>Descripción:</strong>
+            <ul>
+                <li><strong>Uso:</strong> Monitoreo sin cables para hogares y negocios.</li>
+                <li><strong>Características:</strong> Conectividad Wi-Fi para monitoreo remoto.</li>
+            </ul>
+        </p>
+        <p><strong>Precio Unitario:</strong> <span id="precio_5">$60.00</span></p>
+        <label for="cantidad_5">Cantidad:</label>
+        <input type="number" id="cantidad_5" class="cantidad" data-product-id="5" value="0" min="0">
+        <p><strong>Precio Total:</strong> <span id="precio-total_5">$0.00</span></p>
+        <button onclick="addToCart(5)">Añadir al Carrito</button>
+    </div>
+</section>
+
+<footer>
+    <p>&copy; 2024 VigiPlus. Todos los derechos reservados.</p>
+</footer>
+
+<script src="../scripts/productos.js"></script>
+
+</body>
+</html>

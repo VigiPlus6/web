@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario ARCO - VigiPlus</title>
+    <link rel="stylesheet" href="../styles/arco.css">
+</head>
+<body>
+
+<header>
+    <div class="header-content">
+        <img src="../fotos_y_otros/logo.png" alt="Logo de VigiPlus" class="logo">
+        <h1>VigiPlus</h1>
+        <nav>
+            <ul>
+                <li><a href="../index.html">Inicio</a></li>
+                <li><a href="productos.html">Productos</a></li>
+                <li><a href="quienes-somos.html">Quiénes Somos</a></li>
+                <li><a href="mision-vision.html">Misión y Visión</a></li>
+                <!-- <li><a href="privacidad.html">Aviso de Privacidad</a></li> -->
+                <li><a href="arco.html">Formulario ARCO</a></li>
+                <li><a href="carrito.html">Carrito de Compras</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+<section class="content">
+    <h2>Formulario para ejercer los Derechos ARCO</h2>
+    <p>De conformidad con la Ley General de Protección de Datos Personales en Poseción de Sujetos Obligados (LGPDPPSO), usted tiene derecho a acceder, rectificar, cancelar u oponerse al tratamiento de sus datos personales, conocidos como derechos ARCO.</p>
+    <p>Por favor, complete el formulario a continuación para ejercer cualquiera de estos derechos. Nuestro equipo procesará su solicitud y le notificará la respuesta dentro de los plazos establecidos por la ley.</p>
+    
+    <form action="enviar-solicitud.php" method="POST">
+        <div class="form-group">
+            <label for="nombre">Nombre completo:</label>
+            <input type="text" id="nombre" name="nombre" required>
+        </div>
+        
+        <div class="form-group">
+            <label for="email">Correo electrónico:</label>
+            <input type="email" id="email" name="email" required>
+        </div>
+        
+        <div class="form-group">
+            <label for="telefono">Teléfono:</label>
+            <input type="tel" id="telefono" name="telefono" required>
+        </div>
+
+        <div class="form-group">
+            <label for="derecho">Derecho que desea ejercer:</label>
+            <select id="derecho" name="derecho" required>
+                <option value="acceso">Acceso</option>
+                <option value="rectificacion">Rectificación</option>
+                <option value="cancelacion">Cancelación</option>
+                <option value="oposicion">Oposición</option>
+            </select>
+        </div>
+
+        <div class="form-group">
+            <label for="detalle">Detalle de su solicitud:</label>
+            <textarea id="detalle" name="detalle" rows="4" required></textarea>
+        </div>
+
+        <div class="form-group">
+            <button type="submit">Enviar Solicitud</button>
+        </div>
+    </form>
+
+    <!-- Botón que redirige a privacidad.html -->
+    <div class="privacy-button">
+        <a href="privacidad.html">
+            <button type="button">Aviso de Privacidad</button>
+        </a>
+    </div>
+
+</section>
+
+<footer>
+    <p>&copy; 2024 VigiPlus. Todos los derechos reservados.</p>
+</footer>
+
+</body>
+</html>
